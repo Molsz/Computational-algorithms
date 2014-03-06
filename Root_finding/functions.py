@@ -12,33 +12,33 @@ def polynomial(*args):
         return sum([arg*pow(x, i) for i, arg in enumerate(reversed(args))])
     return fun
 
-def function_a(x):
+def func_a(x):
     """e^(-x) - x"""
     return math.exp(-x) - x
 
-def function_a_deriv(x):
+def func_a_deriv(x):
     """-e^(-x) - 1"""
     return -math.exp(-x) - 1
 
-def function_b(a):
+def func_b(a):
     """e^(-ax) - x"""
     def fun(x):
         return math.exp(-a*x) - x
     return fun
 
-def function_b_deriv(a):
+def func_b_deriv(a):
     """-a*e^(-ax) - 1"""
     def fun(x):
         return -a * math.exp(-a*x) - 1
     return fun
 
-def function_c(a):
+def func_c(a):
     """a - sin(1/x)"""
     def fun(x):
         return a - math.sin(1/x)
     return fun
 
-def function_c_deriv(a):
+def func_c_deriv(a):
     """(cos(1/x))/x^2"""
     def fun(x):
         return math.cos(1/x)/x**2
