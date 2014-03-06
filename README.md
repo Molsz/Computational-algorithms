@@ -1,0 +1,1 @@
+Collection of short scripts written in Python 2.7 solving various problems.
