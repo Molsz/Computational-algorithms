@@ -35,6 +35,6 @@ def secant(fun, a, b, eps=1e-6):
 
 if __name__ == '__main__':
     print 'Running all methods on example function e^(-x) - x...'
-    print 'Bisection method: %.9f' %bisect(func_a, a=-2, b=4)
-    print 'Newton method: %.9f' %tangent(func_a, func_a_deriv, x=0)
-    print 'Secant method: %.9f' %secant(func_a, a=-2, b=4)
+    print 'Bisection method: %.9f' % bisect(func_a, a=-2, b=4)
+    print 'Newton method: %.9f' % tangent(func_a, func_a_deriv, x=0)
+    print 'Secant method: %.9f' % secant(func_a, a=-2, b=4)
